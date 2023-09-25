@@ -1,0 +1,101 @@
+/***MEDIA QUERY 320px hasta 767px***/
+@media (min-width: 320px) and (max-width:767px){
+    .home {
+        /* padding: 0 8rem; */
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5%;
+        /* border: 1px solid yellow; */
+        }
+        .home .holaSoy {
+            display: flex;
+            color: #33d2ff;
+            font-size: 1.1em;
+            padding:2%;
+            width: 100%;
+            /* border: 1px solid white; */
+        }
+        .home > h1 {
+            background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 100%;
+            font-size: 3rem;
+            text-align: center;
+            /* border: 1px solid blue; */
+        }
+        .home > .mePresento{
+            text-align: center;
+            padding: 5%;
+            font-size: 1em;
+            /* border: 1px solid white; */
+        }
+        .home > a {
+        cursor: pointer;
+        padding: 2%;
+        text-align: center;
+        font-size: 1.3rem;
+        /* border: 1px solid green; */
+        }
+}
+/***MEDIA QUERY 768px hasta 1500px***/
+    @media (min-width: 768px) and (max-width:1500px) {
+    .home {
+        align-items: center;
+        justify-content: center;
+        padding:5%;
+        /* border: 1px solid red; */
+    }
+    .home .holaSoy {
+        display: flex;
+        color: #33d2ff;
+        font-size: 1.1em;
+        padding:0;
+        padding-top: 0;
+        margin-top: 0;
+        margin-left:0.5%;
+        width: 100%;
+        /* border: 1px solid white; */
+    }
+    .home > h1 {
+    padding-top: 3%;
+    margin-left:0%;
+    font-size: 5.5rem;
+    background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    .home > .mePresento{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        padding: 8%;
+        font-size: 1.5em;
+        /* border: 1px solid white; */
+    }
+    .home > a {
+        display: flex;
+        cursor: pointer;
+        padding: 2%;
+        text-align: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-top:30px;
+        /* border: 1px solid green; */
+        }
+        .home > a:hover {
+            display: flex;
+            cursor: pointer;
+            padding: 2%;
+            text-align: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-top:30px;
+            /* border: 1px solid green; */
+            }
+}

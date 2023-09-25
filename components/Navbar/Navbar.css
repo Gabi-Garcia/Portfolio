@@ -1,0 +1,77 @@
+
+    /***MEDIA QUERY 320px hasta 767px***/
+    @media (min-width: 320px) and (max-width:767px){
+    nav {
+    padding: 5%;
+    /* height: 10vh; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    }
+    nav > h2{
+        font-size:1.4rem;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        /* border: 1px solid white; */
+    }
+    nav > ul {
+        display: flex;
+        gap: 0.5rem;
+        /* border: 1px solid blue; */
+    }
+    nav > ul > li > a{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center; 
+        /* border: 1px solid rgb(255, 0, 179); */
+    }
+    nav button {
+        background: none;
+        border: none;
+        color: inherit;
+        transform: scale(1.5);
+    }
+    nav a {
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    }
+    nav a:hover {
+    color: var(--highlight);
+    }
+}
+
+/***MEDIA QUERY DESDE 768px hasta 1500px****/
+@media (min-width: 767px) and (max-width:1500px){
+    nav {
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:5%;
+        flex-wrap: wrap;
+        /* border: 1px solid white; */
+        }
+    nav > ul {
+    display: flex;
+    gap: 3rem;
+    
+    }
+    nav button {
+    background: none;
+    border: none;
+    color: inherit;
+    transform: scale(1.5);
+    }
+    nav a {
+    transition: all 0.3s ease-in-out;
+    }
+    nav a:hover {
+    color: var(--highlight);
+    }
+}
