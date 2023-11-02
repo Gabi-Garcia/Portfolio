@@ -3,7 +3,7 @@ export const projects = [
     {
         title: "C.V. Gabi-Garcia Dev",
         description: "Aquí puedes descargar el C.V. en formato PDF.",
-        image:"/CapturaCV.JPG",
+        image:"/WhatsAppImage.jpeg",
         tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️", "WebComponents✔️"],
         github: "https://github.com/Gabi-Garcia/cv",
         link: "https://cv-gabi-garcia-dev.netlify.app/",
@@ -52,7 +52,7 @@ export const projects = [
         title: "Batman Cine Cards",
         description: "BatmanCineCards es el lugar donde la historia de Batman cobra vida.",
         image:"/CapturaBatman.JPG",
-        tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️", "WebComponents✔️"],
+        tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️", "Web Components✔️"],
         github: "https://github.com/Gabi-Garcia/BatmanCineCards",
         link: "https://batman-cine-cards.vercel.app/",
     },
@@ -67,7 +67,7 @@ export const projects = [
     {
     title: "Walkie Paws",
     description: "Ilustración de una posible app de paseadores de perros.",
-    image:"/CapturaWalkie.JPG",
+    image:"/WhatsAppImageWalkie.jpeg",
     tech: ["HTML5✔️", "CSS3✔️"],
     github: "https://github.com/Gabi-Garcia/chatAppCssIllustration",
     link: "https://walkiepaws.netlify.app/",

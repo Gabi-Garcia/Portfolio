@@ -6,9 +6,8 @@ export const Home = () => {
     cleanPage(main);
     main.innerHTML = `
     <section class="home">
-    <p class="holaSoy">Hola, soy</p>
-            <div class="cajaArriba">
-                <h1>Gabriel Garcia</h1>
+    <div class="cajaArriba">
+                <h1>Gabi Garcia</h1>
                 <div class="cajaFoto">
                     <img src="/perfil.jpg">
                 </div>
