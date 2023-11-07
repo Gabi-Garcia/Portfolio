@@ -14,6 +14,6 @@ footer.innerHTML = Footer();
 linkPage("#homelink", Home);
 linkPage("#projectslink", Projects);
 Home();
-Projects()/**/
+//Projects()/**/
 changeTheme();
 footer.insertAdjacentHTML("beforebegin", Divider());
