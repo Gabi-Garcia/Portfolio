@@ -1,0 +1,14 @@
+.cv{
+    width: 59%;
+    margin: auto;
+}
+
+button{
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 8px;
+}
+button:hover{
+    color: gray;
+}

@@ -55,18 +55,25 @@
         align-items: center;
         padding:5%;
         flex-wrap: wrap;
-        /* border: 1px solid white; */
-        }
+    }
     nav > ul {
-    display: flex;
-    gap: 3rem;
-    
+        width: 50%;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        
     }
     nav button {
-    background: none;
-    border: none;
-    color: inherit;
-    transform: scale(1.5);
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        background: none;
+        border: none;
+        color: inherit;
+        transform: scale(1.5);
+        cursor: pointer;
+        /* border: 1px solid white; */
+
     }
     nav a {
     transition: all 0.3s ease-in-out;

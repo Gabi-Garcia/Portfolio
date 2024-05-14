@@ -1,0 +1,27 @@
+
+.certificado-card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column ;
+    margin: auto;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+.header{
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+.header> h4{
+    padding: 5px;
+}
+.boximgCertificados{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+}
+.certificado-card > .boximgCertificados > img{
+    width: 95%;
+    height: 95%;
+}

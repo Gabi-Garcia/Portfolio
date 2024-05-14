@@ -26,6 +26,15 @@
           <a href="#" id="projectslink">Projects</a>
       </li>
       <li>
+      <a href="#" id="aboutlink">Sobre mi</a>
+      </li>
+      <li>
+      <a href="#" id="certificados">Certificaciones</a>
+      </li>
+      <li>
+      <a href="#" id="curriculum">C.V.</a>
+      </li>
+      <li>
           <button id="themeBtn">☀</button>
       </li>
    </ul>

@@ -3,7 +3,7 @@ export const projects = [
     {
         title: "C.V. Gabi-Garcia Dev",
         description: "Aquí puedes descargar el C.V. en formato PDF para contratarme. ",
-        image:"/WhatsAppImage.jpeg",
+        image:"/public/projects/WhatsAppImage.jpeg",
         tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️", "WebComponents✔️"],
         github: "https://github.com/Gabi-Garcia/cv",
         link: "https://cv-gabi-garcia-dev.netlify.app/",
@@ -11,7 +11,7 @@ export const projects = [
     {
         title: "Code Compass",
         description: "Portal de recursos para los amantes de la programación. Aumenta tu potencial.",
-        image:"/compass.png",
+        image:"/public/projects/compass.png",
         tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️", "Web Components✔️"],
         github: "https://github.com/Gabi-Garcia/CodeCompass",
         link: "https://code-compass-chi.vercel.app/",
@@ -19,7 +19,7 @@ export const projects = [
     {
     title: "Expense Mate",
     description: "Aplicación para calcular tus gastos colocando un presupuesto inicial, tu nuevo amigo.",
-    image:"/presupuesto.png",
+    image:"/public/projects/presupuesto.png",
     tech: ["HTML5✔️", "CSS3✔️", "TypeScript✔️", "Angular✔️"],
     github: "https://github.com/Gabi-Garcia/ANGULAR-Gastos",
     link: "https://angular-aplicacionpresupuesto.web.app/",
@@ -27,7 +27,7 @@ export const projects = [
     {
     title: "Busca Movies",
     description: "Busca tus películas favoritas por título o palabras claves.Verás poster y año.",
-    image:"/carrete.png",
+    image:"/public/projects/carrete.png",
     tech: ["HTML5✔️", "CSS3✔️", "TypeScript✔️", "Angular✔️"],
     github: "https://github.com/Gabi-Garcia/ANGULAR-Buscador-Peliculas",
     link: "https://buscadordepeliculas-8c06c.web.app/",
@@ -35,7 +35,7 @@ export const projects = [
     {
     title: "Rivo Market",
     description: "Tienda de ropa, busca por vendedor o por precio.",
-    image:"/rivo.png",
+    image:"/public/projects/rivo.png",
     tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️","Web Components✔️"],
     github: "https://github.com/Gabi-Garcia/Rivo-JS",
     link: "https://rivo-market.vercel.app/",
@@ -43,7 +43,7 @@ export const projects = [
     {
     title: "Color Flipper",
     description: "Aplicación para quienes buscar maquetar una página web.",
-    image:"/delfin.png",
+    image:"/public/projects/delfin.png",
     tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️","Web Components✔️"],
     github: "https://github.com/Gabi-Garcia/Color-Flipper",
     link: "https://color-flipper-phi.vercel.app/",
@@ -59,7 +59,7 @@ export const projects = [
     {
         title: "Pokémon",
         description: "Aquí tu puedes encontrar a tu Pokémon!!",
-        image:"/pokecoin.png",
+        image:"/public/projects/pokecoin.png",
         tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️", "WebComponents✔️"],
         github: "https://github.com/Gabi-Garcia/pokemon",
         link: "https://pokemon-pocket.netlify.app/",
@@ -67,7 +67,7 @@ export const projects = [
     {
     title: "Walkie Paws",
     description: "Ilustración de una app de paseadores de perros. Proyecto en contínuo crecimiento.",
-    image:"/perro.png",
+    image:"/public/projects/perro.png",
     tech: ["HTML5✔️", "CSS3✔️"],
     github: "https://github.com/Gabi-Garcia/chatAppCssIllustration",
     link: "https://walkiepaws.netlify.app/",
@@ -75,7 +75,7 @@ export const projects = [
     {
     title: "Landing page",
     description: "Landing page de aplicación que organiza tus copias y te da acceso en tus dispositivos.",
-    image:"/logo.svg",
+    image:"/public/projects/logo.svg",
     tech: ["HTML5✔️", "CSS3✔️"],
     github: "https://github.com/Gabi-Garcia/Clipboard-Landing-Page",
     },

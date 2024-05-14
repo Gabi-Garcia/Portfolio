@@ -6,11 +6,11 @@ export const Home = () => {
     cleanPage(main);
     main.innerHTML = `
     <section class="home">
-    <div class="cajaArriba">
+        <div class="cajaArriba">
                 <h1>Gabi Garcia</h1>
                 <div class="cajaFoto">
-                    <img src="/perfil.jpg"> 
-                </div>
+                    <img src="/public/Perfil/Color_perfil.jpeg">  
+        </div>
             </div>
             <p class="mePresento">Me presento como un programador full stack junior altamente
             motivado y apasionado por la creación de soluciones tecnológicas
