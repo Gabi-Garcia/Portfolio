@@ -9,7 +9,7 @@ export const Home = () => {
         <div class="cajaArriba">
                 <h1>Gabi Garcia</h1>
                 <div class="cajaFoto">
-                    <img src="/public/Perfil/Color_perfil.jpeg">  
+                    <img src="/Perfil/Color_perfil.jpeg">  
         </div>
             </div>
             <p class="mePresento">Me presento como un programador full stack junior altamente
