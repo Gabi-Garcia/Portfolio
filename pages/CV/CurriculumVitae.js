@@ -8,9 +8,9 @@ export const CurriculumVitae = ()=>{
     main.innerHTML = `
     ${Divider()}
     <section class="cv">
-    <button><a href="./public/CV/Dev_Gabriel.pdf" target="_blank" download="cv">Descargar</a></button>
+    <button><a href="/CV/Dev_Gabriel.pdf" target="_blank" download="cv">Descargar</a></button>
      <div class="imgCV">
-      <img src="/public/CV/CVImg.jpeg">
+      <img src="/CV/CVImg.jpeg">
      </div>
     </section> 
     `
