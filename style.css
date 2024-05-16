@@ -1,5 +1,6 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 :root {
   --primary-dark: whitesmoke;
@@ -13,7 +14,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   }
   li {
   list-style-type: none;

@@ -1,70 +1,41 @@
-/***MEDIA QUERY 320px hasta 767px***/
+/************************************************************/
+/**************MEDIA QUERY 320px hasta 767px*****************/
+/*************************************************************/
 @media (min-width: 320px) and (max-width:767px){
     footer {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 1rem;
-        margin :0; 
-        /* border: 1px solid violet; */
-        }
-        footer h2{
-            font-size: 1rem;
-            display: none;
-            /* border: 1px solid red; */
+        padding: 10px;
         }
         footer > div {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: space-around;
-            font-size: 1.5rem;
-            gap: 1rem;
             width: 100%;
-            padding: 5%;
-            /* border: 1px solid green; */
-            }
-            .my-btn {
-                background: none;
-                border: 1px solid var(--primary-dark);
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: var(--primary-dark);
-                width: 4.5rem;
-                padding: 0.5rem;
-                gap: 0.5rem;
-                border-radius: 0.3rem;
-                transition: all 0.5s ease-in-out;
-                background-color: var(--bg-dark);
-                cursor: pointer;
+            padding: 10px;
             }
 }
 
-/***MEDIA QUERY 768px hasta 1500px***/
+/*************************************************************/
+/**************MEDIA QUERY 768px hasta 1500px*****************/
+/**************************************************************/
 @media (min-width: 768px) and (max-width:1500px){
 
     footer {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 8rem;
-        gap: 4rem;
         flex-wrap: wrap;
-        margin: 2rem 0; 
-        }
-        @media (max-width: 770px) {
-        footer {
-        padding: 0 2rem;
-        gap: 2rem;
-        }
-        }
-        footer > div {
+        padding:40px;
+    }
+    footer > div {
+        width: 100%;
         display: flex;
-        gap: 1rem;
         flex-wrap: wrap;
+        flex-direction: row;
+        padding: 5px;
         }
         
 }

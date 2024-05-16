@@ -1,10 +1,12 @@
 import "./Home.css";
 import { cleanPage } from "../../utils/cleanPage";
+import { Divider } from "../../components/Divider/Divider";
 
 export const Home = () => {
     const main = document.querySelector("main");
     cleanPage(main);
     main.innerHTML = `
+    ${Divider()}
     <section class="home">
         <div class="cajaArriba">
                 <h1>Gabi Garcia</h1>

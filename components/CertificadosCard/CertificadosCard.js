@@ -3,7 +3,7 @@ import "./CertificadosCard.css";
 export const CertificadosCard = (certificado) => `
 <div class="certificado-card">
 
-   <div class="header">
+   <div class="CertificadosHeader">
     <h4>${certificado.title}</h4>
    </div>
 

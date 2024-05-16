@@ -9,7 +9,6 @@ export const Certificados = () => {
     cleanPage(main);
     main.innerHTML = `
     ${Divider()}
-    <h2>Certificados 🚀</h2>
     <section class="certificados">
     <div class="certificados-container"></div>
     </section>`;
