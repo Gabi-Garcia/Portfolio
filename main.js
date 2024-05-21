@@ -13,7 +13,6 @@ import { Certificados } from "./pages/Certificados/Certificados";
 import { CurriculumVitae } from "./pages/CV/CurriculumVitae";
 
 
-
 const header = document.querySelector("header");
 header.innerHTML = Navbar();
 const footer = document.querySelector("footer");

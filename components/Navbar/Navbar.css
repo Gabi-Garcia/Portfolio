@@ -1,104 +1,155 @@
-
-    /***MEDIA QUERY 320px hasta 767px***/
+    /*************************************************************************/
+    /**********************MEDIA QUERY 320px hasta 767px**********************/
+    /**************************************************************************/
     @media (min-width: 320px) and (max-width:767px){
+        .burguer{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: 10px;
+            width: 70%;
+            align-items: center;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+        }
+        .navbar-burguer{
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            /* border: 1px solid blue; */
+        }
+        .burguer img{
+            width: 25px;
+            height: 25px;
+            /* border: 1px solid red; */
+        }
+        h2{
+            font-size: 1.6rem;
+            display: flex;
+            width: 50%;
+        }
     nav {
     width: 100%;
+    /* height: 100%; */
     margin-top: 0px;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     background-color: gray;
     /* border: 1px solid red; */
     }
-    .burguer{
-        width: 50px;
-        height: 50px;
-        background-color: var(--highlight);
-    }
-    .burguer img{
-        width: 100%;
-        height: 100%;
-    }
     nav > ul {
         width: 100%;
+        height: 240px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 0.5rem;
         display: none;
-        border: 1px solid blue;
+        /* border: 1px solid yellow; */
     }
-    nav > ul > li > a{
+    nav > ul > li {
+        display:block;
+        width:40%;
+        height: 30px;
+        padding: 0px;
+        /* border: 1px solid green; */
+    }
+    nav > ul > li > a {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        text-align: center;
-        border: 1px solid rgb(255, 0, 179);
-    }
-    nav button {
-        height: 40px;
-        background: none;
-        border: none;
-        color: inherit;
-        transform: scale();
-        border:1px solid  #33d2ff;
-    }
-    nav a {
-    font-size: 1.5rem;
-    transition: all 0.3s ease-in-out;
-    }
-    nav a:hover {
-    color: var(--highlight);
+        margin-top: 10px;
+        margin-left: 15px;
+        width: 80%;
+        max-height:50px;
+        font-size: 1.2rem;
+        /* border: 1px solid white; */
     }
 }
 /***********************************************************************/
-/************************MEDIA QUERY DESDE 768px hasta 1500px***********/
+/************************MEDIA QUERY DESDE 767px hasta 1500px***********/
 /***********************************************************************/
 @media (min-width: 767px) and (max-width:1500px){
+    .burguer{
+        display: none;
+    }
+    h2{
+        display: none;
+    }
     nav {
-        height: 10vh;
-        display: flex;
-        padding:5%;
+        width: 100%;
+        height:150px ;
         display: flex;
         flex-wrap: wrap;
-    }
-    nav > .burguer{
-        display: none;
+        flex-direction: row;
+        /* background-color: white; */
+        /* border: 1px solid red; */
     }
     nav > ul {
         margin: auto;
+        margin-top:40px;
         width: 100%;
-        height: 50px;
+        height: 150px;
+        padding: 1%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 7px;
+        gap: 0px;
+        /* background-color: yellow;
+        border: 1px solid yellow; */
     }
-    nav > ul > li{
+    nav > ul > li {
+        display:block;
         text-align: center;
-        width: 15%;
-        padding: 5px;
+        width:15%;
+        height: 50px;
+        padding: 7px;
+        /* background-color: green;
+        border: 1px solid green; */
     }
     nav > ul > li > a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        max-height:50px;
+        justify-content: space-around;
         font-size: 1.5rem;
+        /* border: 1px solid white; */
+    }
+    nav > ul > li > #themeBtn {
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 20%;
+        max-height:35px;
+        justify-content: space-around;
+        font-size: 1rem;
+        /* border: 1px solid white; */
+    }
+    nav > ul > li > #themeBtn:hover {
+        margin-top: 0px;
+        background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.2rem;
+        transition: all 0.7s ease-in-out;
+        /* border: 1px solid white; */
     }
     nav > ul > li > a:hover {
         background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         transition: all 0.7s ease-in-out;
-    /* color: var(--highlight); */
     }
-    nav > ul > li > button {
-        width: 30px;
-        height: 29px;
-        background: none;
-        border: none;
-        color: inherit;
-        transform: scale(1.8);
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-    }
+
+   
 }
