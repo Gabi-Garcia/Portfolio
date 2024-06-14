@@ -65,18 +65,12 @@ export const projects = [
         link: "https://pokemon-pocket.netlify.app/",
     },
     {
-    title: "Walkie Paws",
-    description: "Ilustración de una app de paseadores de perros. Proyecto en contínuo crecimiento.",
-    image:"/Projects/perro.png",
-    tech: ["HTML5✔️", "CSS3✔️"],
-    github: "https://github.com/Gabi-Garcia/chatAppCssIllustration",
-    link: "https://walkiepaws.netlify.app/",
+    title: "APOD",
+    description: "Atronomic picture of the day. Explora la Astronomía a través de imágenes asombrosas.",
+    image:"/Projects/observacion.png",
+    tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️", "React✔️"],
+    github: "https://github.com/Gabi-Garcia/APOD",
+    link: "https://apod-omega.vercel.app/",
     },
-    {
-    title: "Landing page",
-    description: "Landing page de aplicación que organiza tus copias y te da acceso en tus dispositivos.",
-    image:"/Projects/logo.svg",
-    tech: ["HTML5✔️", "CSS3✔️"],
-    github: "https://github.com/Gabi-Garcia/Clipboard-Landing-Page",
-    },
+
     ];
