@@ -72,5 +72,13 @@ export const projects = [
     github: "https://github.com/Gabi-Garcia/APOD",
     link: "https://apod-omega.vercel.app/",
     },
+    {
+        title: "Jugando Ando",
+        description: "Aplicación de juegos.",
+        image:"/Projects/rompecabezas.png",
+        tech: ["HTML5✔️", "styled-components✔️", "JavaScript✔️", "React✔️"],
+        github: "https://github.com/Gabi-Garcia/jugando-ando/tree/master",
+        link: "https://hub-de-juegos-zeta.vercel.app/",
+        },
 
     ];
