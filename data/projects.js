@@ -80,5 +80,13 @@ export const projects = [
         github: "https://github.com/Gabi-Garcia/jugando-ando/tree/master",
         link: "https://hub-de-juegos-zeta.vercel.app/",
         },
+        {
+            title: "Clima Check",
+            description: "Aplicación para el pronóstico del tiempo.",
+            image:"/Projects/CoupleOutdoors.png",
+            tech: ["HTML5✔️", "styled-components✔️", "JavaScript✔️", "React✔️"],
+            github: "https://github.com/Gabi-Garcia/clima-check",
+            link: "https://clima-check-sigma.vercel.app/",
+            },
 
     ];
