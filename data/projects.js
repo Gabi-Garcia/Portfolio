@@ -88,5 +88,13 @@ export const projects = [
             github: "https://github.com/Gabi-Garcia/clima-check",
             link: "https://clima-check-sigma.vercel.app/",
             },
+            {
+                title: "Mirador de Libros",
+                description: "Sitio web que reúne obras literarias con información detallada.",
+                image:"https://img.freepik.com/foto-gratis/libros-realistas-apilados-estante_23-2151359537.jpg?size=626&ext=jpg&ga=GA1.1.1812565830.1720780701&semt=ais_user",
+                tech: ["HTML5✔️", "CSS✔️", "JavaScript✔️", "React✔️"],
+                github: "https://github.com/Gabi-Garcia/Mirador-de-Libros",
+                link: "https://mirador-de-libros.vercel.app/",
+                },
 
     ];
