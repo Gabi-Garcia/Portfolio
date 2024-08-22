@@ -1,12 +1,12 @@
 
 export const projects = [
     {
-        title: "C.V. Gabi-Garcia Dev",
-        description: "Aquí puedes descargar el C.V. en formato PDF para contratarme. ",
-        image:"/Projects/WhatsAppImage.jpeg",
-        tech: ["HTML5✔️", "CSS3✔️", "JavaScript✔️", "WebComponents✔️"],
-        github: "https://github.com/Gabi-Garcia/cv",
-        link: "https://cv-gabi-garcia-dev.netlify.app/",
+        title: "Laboratorio de Monstruos",
+        description: "Página web destinada a la creación de monstruos. Recurso para que juegue toda la familia. ",
+        image:"/Projects/monstruo.png",
+        tech: ["HTML5✔️", "CSS3✔️", "ReactJS✔️", "Node✔️", "Mongo✔️"],
+        github: "https://github.com/Gabi-Garcia/Laboratorio-de-Monstruos-Frontend",
+        link: "https://laboratorio-de-mounstruos-frontend.vercel.app/",
     },
     {
         title: "Code Compass",
