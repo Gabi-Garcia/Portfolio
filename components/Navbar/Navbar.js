@@ -1,21 +1,6 @@
 
 import "./Navbar.css";
 
-   export const changeTheme = () => {
-   const themeBtn = document.querySelector("#themeBtn");
-   themeBtn.addEventListener("click", () => {
-   document.body.classList.toggle("light");
-   changeText();
-   });
-   };
-   export const changeText = () => {
-   const themeBtn = document.querySelector("#themeBtn");
-   if (themeBtn.innerText === "☀") {
-   themeBtn.innerText = "☾";
-   } else {
-   themeBtn.innerText = "☀";
-   }
-  };
   export const Navbar = () => {
     document.addEventListener("DOMContentLoaded", () => {
        
@@ -45,7 +30,7 @@ import "./Navbar.css";
                 console.log('mobile')
               }
              else if(window.innerWidth >= 767){
-              mainNav.style = "height:150px";
+              mainNav.style = "height:400px";
              }
             })
           )
@@ -55,34 +40,80 @@ import "./Navbar.css";
     })
   ;
   return `
-  <div class="burguer">
-     <button class="navbar-burguer" id="js-navbar-burguer">
-       <img src="/BurguerIcon/barra-de-menus.png"</>
-     </button>
-    <h2>Gabi Garcia</h2>
+  <div class="navbarContainer">
+      <div class="burguer">
+        <button class="navbar-burguer" id="js-navbar-burguer">
+            <img src="/BurguerIcon/barra-de-menus.png"</>
+        </button>
+      </div>
+    <nav class="nav">
+      <div class="encabezado">
+        <h1>Gabi Garcia</h1>
+        <h2>Fullstack Developer</h2>
+     
+      </div>
+            <ul class="main-nav" id="js-menu">
+              <li>
+                <a href="#"  class="nav-links" id="homelink">
+                  <span class="line"></span>
+                  <p>Home</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"  class="nav-links" id="projectslink">
+                  <span class="line"></span>
+                  <p>Experiencia</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"  class="nav-links" id="projectslink">
+                  <span class="line"></span>
+                  <p>Proyectos</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"  class="nav-links" id="aboutlink">
+                  <span class="line"></span>
+                  <p>Sobre mi</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"  class="nav-links" id="certificados">
+                  <span class="line"></span>
+                  <p>Certificaciones</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"  class="nav-links" id="curriculum">
+                  <span class="line"></span>
+                  <p>C.V.</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"  class="nav-links" id="skills">
+                  <span class="line"></span>
+                  <p>Skills & Tools</p>
+                </a>
+              </li>
+              <div class="contact">
+                <li>
+                  <a href="#" clas="nav-links">
+                <img src="" alt="Linkedin" title="linkedin">
+                </a>
+                </li>
+                <li>
+                  <a href="#" clas="nav-links">
+                <img src="" alt="GitHub" title="GitHub">
+                </a>
+                </li>
+                <li>
+                  <a href="#" clas="nav-links">
+                <img src="" alt="email" title="email">
+                </a>
+                </li>
+              </div>
+            </ul>
+    </nav>
   </div>
-  
-  <nav class="nav">
-   <ul class="main-nav" id="js-menu">
-      <li>
-      <a href="#"  class="nav-links" id="homelink">Home</a>
-      </li>
-      <li>
-      <a href="#"  class="nav-links" id="projectslink">Projectos</a>
-      </li>
-      <li>
-      <a href="#"  class="nav-links" id="aboutlink">Sobre mi</a>
-      </li>
-      <li>
-      <a href="#"  class="nav-links" id="certificados">Certificaciones</a>
-      </li>
-      <li>
-      <a href="#"  class="nav-links" id="curriculum">C.V.</a>
-      </li>
-      <li>
-      <a href="#" id="themeBtn"  class="nav-links">☀</a>
-      </li>
-      </ul>
-      </nav>
       `;
     }

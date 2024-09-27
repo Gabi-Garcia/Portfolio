@@ -73,83 +73,139 @@
 /************************MEDIA QUERY DESDE 767px hasta 1500px***********/
 /***********************************************************************/
 @media (min-width: 767px) and (max-width:1500px){
-    .burguer{
-        display: none;
-    }
-    h2{
-        display: none;
-    }
-    nav {
-        width: 100%;
-        height:150px ;
+    .navbarContainer{
+        position: fixed;
+        width: 600px;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        /* background-color: white; */
-        /* border: 1px solid red; */
+        flex-direction: column;
+        border: 2px solid violet;
     }
-    nav > ul {
-        margin: auto;
-        margin-top:40px;
-        width: 100%;
-        height: 150px;
-        padding: 1%;
+    
+    .navbar-burguer{
+        display: none;
+    }
+  
+    nav {
+        position: relative;
+        width:100%;
+        height: 100vh;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-        /* background-color: yellow;
-        border: 1px solid yellow; */
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 0px;
+        border: 1px solid red;
+    }
+
+    .encabezado{
+        position: absolute;
+        width:100%;
+        /* height: 40%; */
+        margin-left:0;
+        margin-top:5%;
+        padding:0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+    .encabezado h1{
+        width: 100%;
+        margin-left: 20%;
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+    .encabezado h2{
+        width: 100%;
+        margin-left: 20%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        display: flex;
+        /* border: 1px solid green; */
+    }
+    .encabezado p{
+        color: rgb(170, 165, 165);
+        margin-top:10px;
+        width: 90%;
+        margin-left: 20%;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+   
+    nav > ul {
+        position: absolute;
+        width:100%;
+        height:450px;
+        display: flex;
+        flex-direction:column;
+        padding: 0;
+        gap: 0;
+        margin-top:170px;
+        /* border: 1px solid yellow;  */
     }
     nav > ul > li {
         display:block;
-        text-align: center;
-        width:15%;
-        height: 50px;
-        padding: 7px;
-        /* background-color: green;
-        border: 1px solid green; */
-    }
-    nav > ul > li > a {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 90%;
-        max-height:50px;
-        justify-content: space-around;
-        font-size: 1.5rem;
-        /* border: 1px solid white; */
-    }
-    nav > ul > li > #themeBtn {
+        width:60%;
+        height: 30px;
+        /* margin: auto; */
+        margin-top: 10px;
+        margin-left: 20%;
+        flex-direction: column;
         padding: 0px;
+        /* border: 1px solid green;  */
+    }
+    nav ul .contact{
+        position: fixed;
+        width: 40%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        width: 20%;
-        max-height:35px;
-        justify-content: space-around;
-        font-size: 1rem;
+        flex-direction: row;
+        margin-left: 50px;
+        margin-top:330px;
+        height: 50px;
+        border: 1px solid black;
+    }
+    .contact > li{
+        width: 33%;
         /* border: 1px solid white; */
     }
-    nav > ul > li > #themeBtn:hover {
-        margin-top: 0px;
-        background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 1.2rem;
-        transition: all 0.7s ease-in-out;
-        /* border: 1px solid white; */
+    .contact > li a{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid yellow; */
     }
-    nav > ul > li > a:hover {
-        background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 1.6rem;
-        transition: all 0.7s ease-in-out;
+    a {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        /* border: 1px solid red; */
     }
-
-   
-}
+    
+    a .line {
+        display: block;
+        width: 15px;
+        height: 2px;
+        background-color:white;
+        position: absolute;
+        bottom:0px;
+        left: 0;
+        transition: width 0.3s ease;
+    }
+      
+    a p {
+        /* font-size: 16px; */
+        margin: 0;
+        transition: transform 0.3s ease, font-size 0.3s ease;
+        transform: translateX(0);
+    }
+    a:hover .line {
+        transform: translateY(5px);
+        /* width:70%; */
+        bottom: 10px;
+    }
+    a:hover p {
+        font-size:1.4rem;
+        transform: translateX(20px); /* Mueve el <p> hacia la derecha */
+    }
+   }

@@ -91,11 +91,24 @@
 /**********************************************************************************/
     @media (min-width: 768px) and (max-width:1500px) {
     .home {
-        width: 95%;
+        position: absolute;
+        /* width:500px; */
         margin: auto;
+        margin-left:55%;
         display: flex;
         flex-direction: column;
-        padding:5%;
+        @keyframes circle-in-hesitate {
+            0% {
+                clip-path: circle(0%);
+            }
+            40% {
+                clip-path: circle(40%);
+            }
+            100% {
+                clip-path: circle(125%);
+            }
+        }
+        border:1px solid red;
     }
     /**Foto de perfil*/
     .home .cajaArriba{
@@ -107,6 +120,9 @@
         text-align: center;
         align-items: center;
         margin-top:20px;
+        background-color: rgb (164, 164, 164);
+   
+        border: 1px solid yellow;
     }
     .home > .cajaArriba .cajaFoto{
         width:310px;
@@ -125,10 +141,7 @@
     width: 70%;
     font-size: 7rem;
     margin: auto;
-    background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+   
     }
     .home > .mePresento{
         display: flex;
@@ -137,10 +150,7 @@
         text-align: center;
         padding: 6%;
         font-size: 2rem;
-        background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+     
     }
     .home > a {
         width: 25%;
@@ -154,10 +164,7 @@
         font-size: 2rem;
         margin-top:20px;
         transition: all 0.7s ease-in-out;
-        background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+     
         }
         .home > a:hover {
             display: flex;
