@@ -75,7 +75,7 @@
 @media (min-width: 767px) and (max-width:1500px){
     .navbarContainer{
         position: fixed;
-        width: 600px;
+        width: 550px;
         height: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -157,7 +157,7 @@
     }
     nav ul .contact{
         position: fixed;
-        width: 40%;
+        width:500px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -168,13 +168,18 @@
     }
     .contact > li{
         width: 33%;
-        /* border: 1px solid white; */
+      
     }
     .contact > li a{
         width: 100%;
         height: 100%;
-        /* border: 1px solid yellow; */
     }
+      .contact li a i{
+        font-size: 30px; /* Tamaño del ícono */
+        text-decoration: none;
+        transition: color 0.3s ease; /* Animación suave en hover */
+      }
+      
     a {
         display: inline-block;
         position: relative;

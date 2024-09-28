@@ -97,18 +97,18 @@ import "./Navbar.css";
               </li>
               <div class="contact">
                 <li>
-                  <a href="#" clas="nav-links">
-                <img src="" alt="Linkedin" title="linkedin">
+                  <a href="#" clas="nav-links" target="_blank">
+                  <i class="fab fa-linkedin"></i>
                 </a>
                 </li>
                 <li>
-                  <a href="#" clas="nav-links">
-                <img src="" alt="GitHub" title="GitHub">
+                  <a href="#" clas="nav-links" target="_blank">
+                  <i class="fab fa-github"></i>
                 </a>
                 </li>
                 <li>
-                  <a href="#" clas="nav-links">
-                <img src="" alt="email" title="email">
+                  <a href="#" clas="nav-links" target="_blank">
+                 <i class="fas fa-envelope"></i>
                 </a>
                 </li>
               </div>
