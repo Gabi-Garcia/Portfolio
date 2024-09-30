@@ -30,7 +30,8 @@ import "./Navbar.css";
                 console.log('mobile')
               }
              else if(window.innerWidth >= 767){
-              mainNav.style = "height:400px";
+              mainNav.style = "height:0px";
+              console.log('tablet, desktop')
              }
             })
           )
@@ -50,7 +51,6 @@ import "./Navbar.css";
       <div class="encabezado">
         <h1>Gabi Garcia</h1>
         <h2>Fullstack Developer</h2>
-     
       </div>
             <ul class="main-nav" id="js-menu">
               <li>
