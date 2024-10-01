@@ -76,6 +76,7 @@
     /**/
     .burguer{
         position: fixed;
+        z-index: 1;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -84,7 +85,13 @@
         height: 150px;
         align-items: center;
         justify-content: space-between;
-        border: 1px solid yellow;
+        background-color: rgba(36, 36, 62, 0.85); /* Color similar al degradado del body con 85% de opacidad */
+        background: linear-gradient(to right, #1f1c3b, #302b63); /* Un degradado similar pero un poco más oscuro */
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        /* border: 1px solid yellow; */
     }
     .navbar-burguer{
         margin-top: 10px;
@@ -92,17 +99,36 @@
         height: 70px;
         margin-left: 90%;
         cursor: pointer;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
     .burguer img{
-        width: 25px;
-        height: 25px;
+        width: 100%;
+        height: 100%;
         /* border: 1px solid red; */
     }
-    h2{
-        font-size: 1.6rem;
+    .encabezado{
+        position:fixed;
+        z-index: 1;
+        margin-left:35px;
+        margin-top: 30px;
+        padding:0px;
         display: flex;
-        width: 50%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* border: 1px solid blue; */
+    }
+    .encabezado h1{
+        width: 100%;
+        margin-left:45px;
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+    .encabezado h2{
+        width: 100%;
+        margin-left:50px;
+        font-size:1.6rem;
+        font-weight: 600;
+        display: flex;
     }
 nav {
 width: 100%;
@@ -111,187 +137,93 @@ padding: 0px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-/* border: 1px solid red; */
+/* border: 3px solid green; */
 }
 nav > ul {
     width: 100%;
     height: 100vh;
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+    
     flex-wrap: wrap;
-    gap: 0.5rem;
     display: none;
-    margin-top: 45px;
-    background-color: gray;
+    margin-top: 150px;
+    padding-top: 20px;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* border: 1px solid yellow; */
 }
 nav > ul > li {
     display:block;
-    width:40%;
+    width: 150px;
     height: 30px;
-    padding: 0px;
-    /* border: 1px solid green; */
+    margin-top: 5px;
+    margin-left: 80px;
+    flex-direction: column;
+    padding: 5px;
+    /* border: 1px solid red; */
 }
-nav > ul > li > a {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-left: 15px;
-    width: 80%;
-    max-height:50px;
-    font-size: 1.2rem;
-    /* border: 1px solid white; */
+nav > ul > li a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+   margin-top: 5px;
+   color: #e2e8f0;
+
 }
-    /**/
-    /* .navbarContainer{
-        position: fixed;
-        width: 450px;
-        height:550px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        border: 2px solid violet;
-    }
-   
-    .burguer{
+
+nav > ul > li  a .line {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color:white;
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav > ul > li a p {
+    font-size: 1.1rem;
+    margin: 0;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    transform: translateX(0);
+}
+a:hover .line {
+    transform: translateY(5px);
+    bottom: 10px;
+}
+a:hover p {
+    font-size:1.2rem;
+    transform: translateX(20px); 
+}
+    nav ul .contact{
+        /* position: fixed; */
+        width:400px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        margin-top: 10px;
-        width: 70%;
+        justify-content: center;
+        margin-left:100px;
+        margin: auto;
+        margin-top:50px;
+        height: 40px;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-     
+        text-align: center;
+        /* border: 1px solid blue; */
     }
-    .navbar-burguer{
-        margin-top: 10px;
-        width: 50px;
-        height: 50px;
-        margin-left: 10px;
-      
+    .contact  li{
+        width: 33%;
     }
-    .burguer img{
-        width: 25px;
-        height: 25px;
-        
-    }
-  
-    nav {
-        position:fixed;
-        width:450px;
-        height:500px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        top:50px;
-        left: 30px;
-    }
-
-    .encabezado{
-        position:fixed;
-        margin-left:35px;
-        margin-top:5%;
-        padding:0px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .encabezado h1{
+    .contact li a{
         width: 100%;
-        margin-left:45px;
-        font-weight: bolder;
-        font-size: 2.5rem;
+        height: 100%;
     }
-    .encabezado h2{
-        width: 100%;
-        margin-left:45px;
-        font-size: 1.2rem;
-        font-weight: 600;
-        display: flex;
-        color:#e2e8f0
-       
-    }
-    nav > ul {
-        position: fixed;
-        width:450px;
-        
-        display: flex;
-        flex-direction:column;
-        padding: 0;
-        gap: 0;
-        margin-top:160px;
-       
-    }
-    nav > ul > li {
-     
-        display:block;
-        width:60%;
-        height: 30px;
-        
-        margin-top: 5px;
-        margin-left: 80px;
-        flex-direction: column;
-        padding: 0px;
-      
-    }
-    nav > ul > li a {
-        display: inline-block;
-        position: relative;
+      .contact li a i{
+        font-size: 30px; 
         text-decoration: none;
-       margin-top: 5px;
-       color: #e2e8f0;
-    
-    }
-    
-    nav > ul > li  a .line {
-        display: block;
-        width: 15px;
-        height: 2px;
-        background-color:white;
-        position: absolute;
-        bottom:0px;
-        left: 0;
-        transition: width 0.3s ease;
-    }
-    
-    nav > ul > li a p {
-        font-size: 1rem;
-        margin: 0;
-        transition: transform 0.3s ease, font-size 0.3s ease;
-        transform: translateX(0);
-    }
-    a:hover .line {
-        transform: translateY(5px);
-        bottom: 10px;
-    }
-    a:hover p {
-        font-size:1.1rem;
-        transform: translateX(20px); 
-    }
-        nav ul .contact{
-            position: fixed;
-            width:400px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            margin-left:80px;
-            margin-top:300px;
-            height: 40px;
-            justify-content: center;
-          
-        }
-        .contact  li{
-            width: 33%;
-        }
-        .contact li a{
-            width: 100%;
-            height: 100%;
-        }
-          .contact li a i{
-            font-size: 25px; 
-            text-decoration: none;
-            transition: color 0.3s ease; 
-          } */
+        transition: color 0.3s ease; 
+      } 
     }

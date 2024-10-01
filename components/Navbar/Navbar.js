@@ -4,39 +4,49 @@ import "./Navbar.css";
   export const Navbar = () => {
     document.addEventListener("DOMContentLoaded", () => {
        
-       // Verificar si el ancho de pantalla es menor a 767px
  
        const navLinks = document.querySelectorAll(".nav-links");
        const mainNav = document.querySelector(".main-nav");
        const navBarBurguer = document.querySelector("#js-navbar-burguer");
+       const burgerIcon = document.querySelector("#js-navbar-burguer img");
        const nav = document.querySelector(".nav")
 
-      //  if (!mainNav) {
-      //     console.error("No se encontró la barra de navegación principal.");
-      //     return;
-      //  }
-       navBarBurguer.addEventListener("click", () =>{
-         if(mainNav){
-           mainNav.style= "display:flex";
-         }
-         console.log('click button')
+        
+       // Variable para controlar si el menú está abierto o cerrado
+      let isMenuOpen = false;
+
+      navBarBurguer.addEventListener("click", () =>{
+        if (isMenuOpen) {
+        // Si el menú está abierto, lo cerramos
+        mainNav.style.display = "none";
+        burgerIcon.src = "/BurguerIcon/abrir.png"; // Cambia de nuevo al ícono de hamburguesa
+        isMenuOpen = false;
+      } else {
+        // Si el menú está cerrado, lo abrimos
+        mainNav.style.display = "flex"; // Mostrar el menú
+        burgerIcon.src = "/BurguerIcon/cerrar.png"; // Cambia al ícono de cerrar
+        isMenuOpen = true;
+      }
+        
+      console.log('click button')
         })
         
         navLinks.forEach(link => {
           if(
             link.addEventListener("click", () => {
               if(window.innerWidth < 767){
-                mainNav.style = "height:0px";
-                console.log('mobile')
+                mainNav.style = "display= none";
+                burgerIcon.src = "/BurguerIcon/abrir.png"; // Cambia de nuevo al ícono de hamburguesa
+                isMenuOpen = false;
               }
              else if(window.innerWidth >= 767){
-              mainNav.style = "height:0px";
-              console.log('tablet, desktop')
+              mainNav.style = "display= none";
+              burgerIcon.src = "/BurguerIcon/abrir.png"; // Cambia de nuevo al ícono de hamburguesa
+              isMenuOpen = false;
              }
             })
           )
           ;
-          // showNav(console.log('PRUEBA'))
        });
     })
   ;
@@ -44,7 +54,7 @@ import "./Navbar.css";
   <div class="navbarContainer">
       <div class="burguer">
         <button class="navbar-burguer" id="js-navbar-burguer">
-            <img src="/BurguerIcon/barra-de-menus.png"</>
+            <img src="/BurguerIcon/abrir.png" alt="Abrir menu" />
         </button>
       </div>
     <nav class="nav">
@@ -52,7 +62,7 @@ import "./Navbar.css";
         <h1>Gabi Garcia</h1>
         <h2>Fullstack Developer</h2>
       </div>
-            <ul class="main-nav" id="js-menu">
+            <ul class="main-nav" id="js-menu" style="display: none;">
               <li>
                 <a href="#"  class="nav-links" id="homelink">
                   <span class="line"></span>
@@ -95,7 +105,7 @@ import "./Navbar.css";
                   <p>Skills & Tools</p>
                 </a>
               </li>
-              <div class="contact">
+              <ul class="contact">
                 <li>
                   <a href="#" clas="nav-links" target="_blank">
                   <i class="fab fa-linkedin"></i>
@@ -111,7 +121,7 @@ import "./Navbar.css";
                  <i class="fas fa-envelope"></i>
                 </a>
                 </li>
-              </div>
+              </ul>
             </ul>
     </nav>
   </div>
