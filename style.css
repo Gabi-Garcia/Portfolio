@@ -2,6 +2,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 @import "transition-style";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 :root {
   --primary-dark: whitesmoke;
   --bg-dark: #111111;
@@ -45,12 +46,11 @@
   /* main {
   min-height: 80vh;
   } */
-  p, h1, h2, a {
+  p, h1, h2, h3, a {
+    font-family: "IBM Plex Mono", monospace;
     color: #d3d3d3; /* Gris claro para los párrafos */
   }
   
   p:hover,  h1:hover,  h2:hover, a:hover {
     color: #ffffff; /* Blanco total al pasar el mouse por los párrafos */
   }
-
-  

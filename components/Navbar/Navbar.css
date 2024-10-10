@@ -82,22 +82,21 @@
         flex-direction: row;
         margin-top:0px;
         width: 100%;
-        height: 150px;
+        height: 200px;
         align-items: center;
         justify-content: space-between;
         background-color: rgba(36, 36, 62, 0.85); /* Color similar al degradado del body con 85% de opacidad */
         background: linear-gradient(to right, #1f1c3b, #302b63); /* Un degradado similar pero un poco más oscuro */
         background: #0f0c29;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
         /* border: 1px solid yellow; */
     }
     .navbar-burguer{
-        margin-top: 10px;
-        width: 70px;
-        height: 70px;
-        margin-left: 90%;
+        margin-top:40px;
+        width: 65px;
+        height: 65px;
+        margin-left: 80%;
         cursor: pointer;
         /* border: 1px solid blue; */
     }
@@ -109,8 +108,8 @@
     .encabezado{
         position:fixed;
         z-index: 1;
-        margin-left:35px;
-        margin-top: 30px;
+        margin-left:70px;
+        margin-top: 70px;
         padding:0px;
         display: flex;
         flex-wrap: wrap;
@@ -140,14 +139,15 @@ flex-direction: column;
 /* border: 3px solid green; */
 }
 nav > ul {
+    z-index: 1;
+    position: fixed;
     width: 100%;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
-    
     flex-wrap: wrap;
     display: none;
-    margin-top: 150px;
+    margin-top: 200px;
     padding-top: 20px;
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
@@ -156,19 +156,19 @@ nav > ul {
 }
 nav > ul > li {
     display:block;
-    width: 150px;
+    width: 170px;
     height: 30px;
-    margin-top: 5px;
-    margin-left: 80px;
+    margin-top: 20px;
+    margin-left: 90px;
     flex-direction: column;
-    padding: 5px;
+    padding-top: 10px;
     /* border: 1px solid red; */
 }
 nav > ul > li a {
     display: inline-block;
     position: relative;
     text-decoration: none;
-   margin-top: 5px;
+   margin-top: 0px;
    color: #e2e8f0;
 
 }
@@ -207,9 +207,8 @@ a:hover p {
         justify-content: center;
         margin-left:100px;
         margin: auto;
-        margin-top:50px;
-        height: 40px;
-        justify-content: center;
+        margin-top:30px;
+        /*height: 40px; */
         align-items: center;
         text-align: center;
         /* border: 1px solid blue; */

@@ -1,0 +1,47 @@
+.Cajaexperiencia{
+    width:100%;
+    margin-top:200px;
+    padding: 20px;
+    /* border:1px solid red */
+}
+.Cajaexperiencia .cajaUl{
+    width: 70%;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    &&:hover{
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+}
+
+.Cajaexperiencia .cajaUl p{
+    padding: 5px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+}
+.Cajaexperiencia .cajaUl .ulTech{
+    display: flex;
+    margin-top: 10px;
+    width: 80%;
+    flex-direction: row;
+    gap: 5px;
+    /* border: 1px solid green; */
+}
+.Cajaexperiencia .cajaUl .ulTech li{
+border: 1px solid gray;
+border-radius: 5px;
+padding: 7px;
+font-size: 0.7rem;
+font-weight:bolder;
+text-align: center;
+&&:hover{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+}

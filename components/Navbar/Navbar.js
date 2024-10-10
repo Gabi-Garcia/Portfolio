@@ -63,46 +63,40 @@ import "./Navbar.css";
         <h2>Fullstack Developer</h2>
       </div>
             <ul class="main-nav" id="js-menu" style="display: none;">
-              <li>
-                <a href="#"  class="nav-links" id="homelink">
-                  <span class="line"></span>
-                  <p>Home</p>
-                </a>
-              </li>
-              <li>
-                <a href="#"  class="nav-links" id="projectslink">
-                  <span class="line"></span>
-                  <p>Experiencia</p>
-                </a>
-              </li>
-              <li>
-                <a href="#"  class="nav-links" id="projectslink">
-                  <span class="line"></span>
-                  <p>Proyectos</p>
-                </a>
-              </li>
-              <li>
-                <a href="#"  class="nav-links" id="aboutlink">
+            <li>
+                <a href="#"  class="nav-links" id="about">
                   <span class="line"></span>
                   <p>Sobre mi</p>
                 </a>
               </li>
               <li>
-                <a href="#"  class="nav-links" id="certificados">
+                <a href="#"  class="nav-links" id="experiencia">
                   <span class="line"></span>
-                  <p>Certificaciones</p>
+                  <p>Experiencia</p>
                 </a>
               </li>
               <li>
+                <a href="#"  class="nav-links" id="projects">
+                  <span class="line"></span>
+                  <p>Proyectos</p>
+                </a>
+              </li>
+               <li>
+                <a href="#"  class="nav-links" id="skills_tools">
+                  <span class="line"></span>
+                  <p>Skills & Tools</p>
+                </a>
+              </li>
+                <li>
                 <a href="#"  class="nav-links" id="curriculum">
                   <span class="line"></span>
                   <p>C.V.</p>
                 </a>
               </li>
               <li>
-                <a href="#"  class="nav-links" id="skills">
+                <a href="#"  class="nav-links" id="certificados">
                   <span class="line"></span>
-                  <p>Skills & Tools</p>
+                  <p>Certificaciones</p>
                 </a>
               </li>
               <ul class="contact">
