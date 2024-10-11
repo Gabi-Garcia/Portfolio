@@ -1,0 +1,26 @@
+.SkillsAndTools{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 240px;
+    gap:2.5rem;
+    padding: 50px;
+}
+.SkillsAndTools .skill-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.SkillsAndTools .skill-item i{
+    font-size:5rem;
+}
+.SkillsAndTools .skill-item p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top:10px;
+    cursor: pointer;
+}
+

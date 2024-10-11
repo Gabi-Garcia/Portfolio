@@ -31,6 +31,11 @@ export const Experiencia = ()=>{
                             <li>MySQL</li>
                             <li>MongoDB</li>
                             <li>Node</li>
+                            <li>Figma</li>
+                            <li>Canva</li>
+                            <li>Firebase Hosting</li>
+                            <li>Vercel</li>
+                            <li>Netlify</li>
                         </ul>
         </ul>
         <ul class="cajaUl">
