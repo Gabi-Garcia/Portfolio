@@ -32,7 +32,7 @@ export const About = () => {
                 </div>
                 <div class="TextoMusical">
                 <div class="cajaUno">
-                    <img src="/Perfil/PerfilMusica.jpeg"  alt="Imágen perfil Música" title="Imágen perfil Música" />
+                    <img src="/Perfil/PerfilByN_Musica_Circular_Liviana.jpg"  alt="Imágen perfil Música" title="Imágen perfil Música" />
                 </div>
                         <p>
                         Soy Docente de Música, Especialista en Investigación Educativa, Guitarrista, Docente de Lenguaje Musical, por lo tanto cuento con 
@@ -59,7 +59,7 @@ export const About = () => {
                 </div>
                 <div class="TextoDev"> 
                 <div class="cajaDos">
-                    <img src="/Perfil/PerfilDevByN.jpg"  alt="Imágen perfil Dev" title="Imágen perfil Dev"/>
+                    <img src="/Perfil/PerfilByN_Dev_Circular_Liviana.jpg"  alt="Imágen perfil Dev" title="Imágen perfil Dev"/>
                 </div>
                         <p>
                         Me presento como un programador full stack altamente motivado y apasionado por la creación de 

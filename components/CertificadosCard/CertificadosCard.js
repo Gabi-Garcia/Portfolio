@@ -4,12 +4,10 @@ export const CertificadosCard = (certificado) => `
 <div class="certificado-card">
 
    <div class="CertificadosHeader">
-    <h4>${certificado.title}</h4>
+    <p>${certificado.title}</p>
    </div>
 
    <div class="boximgCertificados">
      <img src=${certificado.image} alt=${certificado.title}/>
-   </div>  
- 
 </div>   
 `;

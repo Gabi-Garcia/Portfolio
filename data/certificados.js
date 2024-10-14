@@ -2,47 +2,47 @@
 export const certificados = [
     {
         title:"Full Stack Developer",
-        image:"/Certificados/FullStackDeveloper.png"
+        image:"/Certificados/FullStackDeveloper(1).png"
     },
     {
         title:"Frontend Developer",
-        image:"/Certificados/FrontendDeveloper.png"
+        image:"/Certificados/FrontendDeveloper(1).png"
     },
     {
         title:"JavaScript Developer",
-        image:"/Certificados/JSDeveloper.png"
+        image:"/Certificados/JSDeveloper.jpg"
     },
     {
         title:"Azure Developer Associate",
-        image:"/Certificados/Azure.png"
+        image:"/Certificados/Azure.jpg"
     },
     {
         title:"Big Data I",
-        image:"/Certificados/BigDataI.png"
+        image:"/Certificados/BigDataI.jpg"
     },
     {
-        title:"Inteligencia Artificial Aplicada a la Empresa",
-        image:"/Certificados/InteligenciaArtificial.png"
+        title:"IA Aplicada a la Empresa",
+        image:"/Certificados/InteligenciaArtificial.jpg"
     },
     {
         title:"Data Scientist",
-        image:"/Certificados/DataScientist.png"
+        image:"/Certificados/DataScientist.jpg"
     },
     {
-        title:"Especialista en Investigación Educativa",
-        image:"/Certificados/InvestigacionEducativa.png"
-    },
-    {
-        title:"Técnico Profesional en Música",
-        image:"/Certificados/Musica.png"
+        title:"Esp. en Investigación Educativa",
+        image:"/Certificados/InvestigacionEducativa.jpg"
     },
     {
         title:"Auxiliar en Educación Especial",
-        image:"/Certificados/EducacionEspecial.png"
+        image:"/Certificados/EducacionEspecial.jpg"
     },
     {
         title:"Recreación y Tiempo Libre",
-        image:"/Certificados/RecreacionYTiempoLibre.png"
+        image:"/Certificados/RecreacionYTiempoLibre.jpg"
     },
+    {
+        title:"Técnico Profesional en Música",
+        image:"/Certificados/Tamaba.png"
+    }
 
 ]

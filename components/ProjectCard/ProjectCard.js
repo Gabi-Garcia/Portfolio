@@ -24,7 +24,7 @@ export const ProjectCard = (project) => {
                     </div>
                     <div class="detail"> 
                     <p class="description">${project.description}</p>
-                    <ul class="tech-list">${techList}</ul> <!-- Insertar la lista aquí -->
+                    <ul class="tech-list">${techList}</ul> <!-- la lista aquí -->
                     </div>
                     </div>
                     `;

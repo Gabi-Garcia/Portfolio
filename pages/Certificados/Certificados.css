@@ -34,10 +34,12 @@
 /**********************************************************************************/
 @media (min-width: 768px) and (max-width:1500px) {
 .certificados{
-    width: 100%;
+    width:100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction:row;
+    margin: auto;
+    margin-top: 240px;
     /* border: 1px solid white; */
 }
 .certificados >.certificados-container{
@@ -47,15 +49,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 10px;
+    gap: 0px;
     /* border: 1px solid green; */
 }
 .certificados > .certificados-container > figure{
     width: 40%;
-    height: 40%;
     display: flex;
     flex-wrap: wrap;
     gap: 0px;
     margin: auto;
+    /* border: 1px solid red; */
 }
 }
