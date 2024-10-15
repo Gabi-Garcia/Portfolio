@@ -8,6 +8,7 @@ export const Projects = () => {
     cleanPage(main);
     main.innerHTML = `
     <section class="projects">
+    <p class="proyectos">Proyectos</p>
     <div class="projects-container"></div>
     </section>`;
     const container = document.querySelector(".projects-container");

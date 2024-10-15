@@ -1,17 +1,36 @@
+/******************************************************************/
+/*******************MEDIA QUERY 320px hasta 767px*****************/
+/******************************************************************/
+@media (min-width: 320px) and (max-width:767px){}
+
+/**********************************************************************************/
+/**************************MEDIA QUERY 768px hasta 1500px**************************/
+/**********************************************************************************/
+@media (min-width: 768px) and (max-width:1500px) {
 .Cajaexperiencia{
     width:100%;
     margin-top:200px;
     padding: 20px;
     /* border:1px solid red */
 }
+.experiencia{
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 200px;
+    left: 50px;
+    padding: 10px;
+    background-color: #975151;
+}
 .Cajaexperiencia .cajaUl{
     width: 70%;
-    margin-left: 70px;
+    margin-left:200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     border: 1px solid gray;
     border-radius: 5px;
     &&:hover{
@@ -48,5 +67,6 @@ text-align: center;
     background-color:#975151;
     border-radius: 5px;
     border: 1px solid white;
+}
 }
 }

@@ -10,12 +10,11 @@ export const About = () => {
             <div class="cajaTextos">
                 <div class="hola">
                     <div class="holaCabecera">
-                        <h2>Hola soy Gabi Garcia / Músico / Docente de Música / Especialista en Investigación Educativa / Intérprete / Creador Musical
+                        <h2>Hola soy Gabi Garcia / Músico / Docente de Música / Esp. en Investigación Educativa / Intérprete / Creador Musical
                             <p class="convertido">convertido en</p> <p class="programador">Programador Fullstack</p> apasionado por 
-                             el aprendizaje contínuo y la creación de soluciones integrales.
+                            el aprendizaje contínuo y la creación de soluciones integrales.
                         </h2>
                     </div>
-                   
                     <p>
                         Argentino viviendo en España desde Septiembre del 2021 con base en Barcelona. En 2020 comencé mi camino en el mundo de la programación, 
                         primero en forma autodidacta, luego asistiendo a distintos

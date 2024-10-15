@@ -2,11 +2,32 @@
 export const projects = [
     {
         anio:"2024",
+        title: "Smartists",
+        description: "Migración de contenidos de cliente final del sector Educación y literatura desde web2 a web3.",
+        tech: ["HTML5", "CSS","React","Hiro"],
+        github: "https://github.com/Gabi-Garcia/smartists-Georgina",
+    },
+    {
+        anio:"2024",
         title: "Laboratorio de Monstruos",
         description: "Página web destinada a la creación de monstruos. Recurso para que juegue toda la familia. ",
         tech: ["HTML5", "CSS", "ReactJS", "Node", "Mongo"],
         github: "https://github.com/Gabi-Garcia/Laboratorio-de-Monstruos-Frontend",
         link: "https://laboratorio-de-mounstruos-frontend.vercel.app/",
+    },
+    {
+        anio:"2024",
+        title: "Proyecto Backend",
+        description: "Proyecto backend que gestiona peticiones desde el frontend.",
+        tech: ["Node", "Express","Mongo","Mongoose","bcrypt","dotenv","nodemon","Cloudinary"],
+        github: "https://github.com/Gabi-Garcia/mern7",
+    },
+    {
+        anio:"2024",
+        title: "Proyecto Testing",
+        description: "Proyecto frontend para pruebas unitarias.",
+        tech: ["Vite","React","Vitest","Styled-Components"],
+        github: "https://github.com/Gabi-Garcia/testing",
     },
     {
         anio:"2023",
@@ -31,14 +52,6 @@ export const projects = [
         tech: ["HTML5", "CSS", "TypeScript", "Angular"],
         github: "https://github.com/Gabi-Garcia/ANGULAR-Buscador-Peliculas",
         link: "https://buscadordepeliculas-8c06c.web.app/",
-    },
-    {   
-        anio:"2021/2022",
-        title: "Rivo Market",
-        description: "Tienda de ropa, busca por vendedor o por precio.",
-        tech: ["HTML5", "CSS", "JavaScript","Web Components"],
-        github: "https://github.com/Gabi-Garcia/Rivo-JS",
-        link: "https://rivo-market.vercel.app/",
     },
     {
         anio:"2023",
@@ -73,14 +86,6 @@ export const projects = [
         github: "https://github.com/Gabi-Garcia/APOD",
         link: "https://apod-omega.vercel.app/",
     },
-    {
-        anio:"2022/2023",
-        title: "Jugando Ando",
-        description: "Aplicación de juegos.",
-        tech: ["HTML5", "styled-components", "JavaScript", "React"],
-        github: "https://github.com/Gabi-Garcia/jugando-ando/tree/master",
-        link: "https://hub-de-juegos-zeta.vercel.app/",
-    },
     { 
         anio:"2023",
         title: "Clima Check",
@@ -106,13 +111,6 @@ export const projects = [
         link: "https://gabi-garcia-portfolio.vercel.app/#",
     },
     {
-        anio:"2024",
-        title: "Smartists",
-        description: "Migración de contenidos de cliente final del sector Educación y literatura desde web2 a web3.",
-        tech: ["HTML5", "CSS","React","Hiro"],
-        github: "https://github.com/Gabi-Garcia/smartists-Georgina",
-    },
-    {
         anio:"2023",
         title: "CV Dinámico",
         description: "Formato de CV Personal, en línea y dinámico.",
@@ -120,18 +118,12 @@ export const projects = [
         github: "https://github.com/Gabi-Garcia/cv",
     },
     {
-        anio:"2024",
-        title: "Proyecto Backend",
-        description: "Proyecto backend que gestiona peticiones desde el frontend.",
-        tech: ["Node", "Express","Mongo","Mongoose","bcrypt","dotenv","nodemon","Cloudinary"],
-        github: "https://github.com/Gabi-Garcia/mern7",
-    },
-    {
-        anio:"2024",
-        title: "Proyecto Testing",
-        description: "Proyecto frontend para pruebas unitarias.",
-        tech: ["Vite","React","Vitest","Styled-Components"],
-        github: "https://github.com/Gabi-Garcia/testing",
+        anio:"2022/2023",
+        title: "Jugando Ando",
+        description: "Aplicación de juegos.",
+        tech: ["HTML5", "styled-components", "JavaScript", "React"],
+        github: "https://github.com/Gabi-Garcia/jugando-ando/tree/master",
+        link: "https://hub-de-juegos-zeta.vercel.app/",
     },
     {
         anio:"2022",
@@ -139,5 +131,13 @@ export const projects = [
         description: "Aplicación frontend, colaboración grupal.",
         tech: ["HTML5", "CSS", "TypeScript", "Angular"],
         github: "https://github.com/Gabi-Garcia/ANGULAR-BuscadordeNoticias",
+    },
+    {   
+        anio:"2021/2022",
+        title: "Rivo Market",
+        description: "Tienda de ropa, busca por vendedor o por precio.",
+        tech: ["HTML5", "CSS", "JavaScript","Web Components"],
+        github: "https://github.com/Gabi-Garcia/Rivo-JS",
+        link: "https://rivo-market.vercel.app/",
     },
     ];

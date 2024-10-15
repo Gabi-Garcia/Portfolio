@@ -19,7 +19,7 @@ import "./Navbar.css";
         if (isMenuOpen) {
         // Si el menú está abierto, lo cerramos
         mainNav.style.display = "none";
-        burgerIcon.src = "/BurguerIcon/abrir.png"; // Cambia de nuevo al ícono de hamburguesa
+        burgerIcon.src = "/BurguerIcon/menu.png"; // Cambia de nuevo al ícono de hamburguesa
         isMenuOpen = false;
       } else {
         // Si el menú está cerrado, lo abrimos
@@ -36,12 +36,12 @@ import "./Navbar.css";
             link.addEventListener("click", () => {
               if(window.innerWidth < 767){
                 mainNav.style = "display= none";
-                burgerIcon.src = "/BurguerIcon/abrir.png"; // Cambia de nuevo al ícono de hamburguesa
+                burgerIcon.src = "/BurguerIcon/menu.png"; // Cambia de nuevo al ícono de hamburguesa
                 isMenuOpen = false;
               }
              else if(window.innerWidth >= 767){
               mainNav.style = "display= none";
-              burgerIcon.src = "/BurguerIcon/abrir.png"; // Cambia de nuevo al ícono de hamburguesa
+              burgerIcon.src = "/BurguerIcon/menu.png"; // Cambia de nuevo al ícono de hamburguesa
               isMenuOpen = false;
              }
             })
@@ -54,7 +54,7 @@ import "./Navbar.css";
   <div class="navbarContainer">
       <div class="burguer">
         <button class="navbar-burguer" id="js-navbar-burguer">
-            <img src="/BurguerIcon/abrir.png" alt="Abrir menu" />
+            <img src="/BurguerIcon/menu.png" alt="Abrir menu" />
         </button>
       </div>
     <nav class="nav">
@@ -101,18 +101,18 @@ import "./Navbar.css";
               </li>
               <ul class="contact">
                 <li>
-                  <a href="#" clas="nav-links" target="_blank">
+                  <a href="https://www.linkedin.com/in/gabriel-garcia-ab029b210/" class="nav-links" target="_blank">
                   <i class="fab fa-linkedin"></i>
                 </a>
                 </li>
                 <li>
-                  <a href="#" clas="nav-links" target="_blank">
+                  <a href="https://github.com/Gabi-Garcia" class="nav-links" target="_blank">
                   <i class="fab fa-github"></i>
                 </a>
                 </li>
                 <li>
-                  <a href="#" clas="nav-links" target="_blank">
-                 <i class="fas fa-envelope"></i>
+                  <a href="mailto:gabriel.garcia.development@gmail.com" class="nav-links" target="_blank">
+                  <i class="fas fa-envelope"></i>
                 </a>
                 </li>
               </ul>

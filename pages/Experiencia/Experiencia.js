@@ -6,7 +6,8 @@ export const Experiencia = ()=>{
     const main = document.querySelector("main")
     cleanPage(main);
     main.innerHTML = `
-    <div class="Cajaexperiencia">
+    <p class="experiencia">Experiencia</p>
+    <div class="Cajaexperiencia"> 
         <ul class="cajaUl">
                 <p>Noviembre 2021 - Actualidad </p>
                 <p>Full Stack Developer</p>

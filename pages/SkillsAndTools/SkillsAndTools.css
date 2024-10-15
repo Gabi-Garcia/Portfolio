@@ -1,11 +1,41 @@
+/******************************************************************/
+/*******************MEDIA QUERY 320px hasta 767px*****************/
+/******************************************************************/
+@media (min-width: 320px) and (max-width:767px){}
+
+/**********************************************************************************/
+/**************************MEDIA QUERY 768px hasta 1500px**************************/
+/**********************************************************************************/
+@media (min-width: 768px) and (max-width:1500px) {
+
 .SkillsAndTools{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    margin-top: 240px;
-    gap:2.5rem;
-    padding: 50px;
+    margin-top: 200px;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+.headerSkillsAndTools{
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 200px;
+    left: 50px;
+    padding: 10px;
+    background-color: #975151;
+}
+.cajaSkill-items{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-left:200px;
+    padding: 20px;
+    margin-top: 30px;
+    /* border: 1px solid yellow; */
 }
 .SkillsAndTools .skill-item{
     display: flex;
@@ -23,4 +53,4 @@
     margin-top:10px;
     cursor: pointer;
 }
-
+}

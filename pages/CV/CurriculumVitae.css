@@ -31,31 +31,33 @@
 /**********************************************************************************/
 @media (min-width: 768px) and (max-width:1500px) {
 .cv{
-    width:90%;
+    width:100%;
     margin: auto;
-    margin-top: 240px;
-    /* border: 1px solid red; */
+    margin-top: 200px;
+    padding: 20px;
+    border: 1px solid red;
 }
 
 .cv button{
         cursor: pointer;
         position: fixed;
+        left: 150px;
         border-radius: 10px;
         padding: 8px;
         font-size: 1rem;
         font-weight:bolder;
         text-align: center;
         border: 2px solid gray;
-        background-color: #302b63;
-        &&:hover{
         background-color:#975151;
+        &&:hover{
         border: 2px solid white;
         }  
 }
 .cv .imgCV{
     margin: auto;
     margin-top: 30px;
-    width:70%;
+    width:50%;
+    height: fit-content;
     /* border: 1px solid yellow; */
 }
 .cv .imgCV img{
