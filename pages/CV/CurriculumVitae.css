@@ -3,27 +3,43 @@
 /******************************************************************/
 @media (min-width: 320px) and (max-width:767px){
     .cv{
-        width:90%;
+        width:100%;
+        height: 100vh;
         margin: auto;
+        margin-top: 150px;
+        padding:10px;
+        /* border: 1px solid red; */
     }
-    
-    button{
+    .cv button{
+            cursor: pointer;
+            margin-left:20px;
+            margin-top:10px;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 0.8rem;
+            text-align: center;
+            border: 2px solid gray;
+            background-color:#975151;
+            &&:hover{
+            border: 2px solid white;
+            }  
+    }
+    .cv button a {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+    .cv .imgCV{
         margin: auto;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        padding: 10px;
+        margin-top: 20px;
+        width:100%;
+        /* border: 1px solid yellow; */
     }
-    button:hover{
-        color: gray;
-    }
-    .imgCV{
-        width: 100%;
-        
-    }
-    .imgCV img{
+    .cv .imgCV img{
+        margin: auto;
         width: 100%;
         height: 100%;
-        
     }
 }
 /**********************************************************************************/
@@ -31,17 +47,42 @@
 /**********************************************************************************/
 @media (min-width: 768px) and (max-width:1500px) {
 .cv{
-    width: 59%;
+    width:100%;
     margin: auto;
+    margin-top: 200px;
+    padding: 20px;
+    /* border: 1px solid red; */
 }
-
-button{
+.cv button{
+        cursor: pointer;
+        position: fixed;
+        left: 150px;
+        border-radius: 10px;
+        padding: 8px;
+        font-size: 0.9rem;
+        text-align: center;
+        border: 2px solid gray;
+        background-color:#975151;
+        &&:hover{
+        border: 2px solid white;
+        }  
+}
+.cv button a {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.cv .imgCV{
     margin: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    padding: 8px;
+    margin-top: 30px;
+    width:50%;
+    height: fit-content;
+    /* border: 1px solid yellow; */
 }
-button:hover{
-    color: gray;
+.cv .imgCV img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
 }
 }

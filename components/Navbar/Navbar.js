@@ -1,88 +1,123 @@
 
 import "./Navbar.css";
 
-   export const changeTheme = () => {
-   const themeBtn = document.querySelector("#themeBtn");
-   themeBtn.addEventListener("click", () => {
-   document.body.classList.toggle("light");
-   changeText();
-   });
-   };
-   export const changeText = () => {
-   const themeBtn = document.querySelector("#themeBtn");
-   if (themeBtn.innerText === "☀") {
-   themeBtn.innerText = "☾";
-   } else {
-   themeBtn.innerText = "☀";
-   }
-  };
   export const Navbar = () => {
     document.addEventListener("DOMContentLoaded", () => {
        
-       // Verificar si el ancho de pantalla es menor a 767px
  
        const navLinks = document.querySelectorAll(".nav-links");
        const mainNav = document.querySelector(".main-nav");
        const navBarBurguer = document.querySelector("#js-navbar-burguer");
+       const burgerIcon = document.querySelector("#js-navbar-burguer img");
        const nav = document.querySelector(".nav")
 
-      //  if (!mainNav) {
-      //     console.error("No se encontró la barra de navegación principal.");
-      //     return;
-      //  }
-       navBarBurguer.addEventListener("click", () =>{
-         if(mainNav){
-           mainNav.style= "display:flex";
-         }
-         console.log('click button')
+        
+       // Variable para controlar si el menú está abierto o cerrado
+      let isMenuOpen = false;
+
+      navBarBurguer.addEventListener("click", () =>{
+        if (isMenuOpen) {
+        // Si el menú está abierto, lo cerramos
+        mainNav.style.display = "none";
+        burgerIcon.src = "/BurguerIcon/menu.png"; // Cambia de nuevo al ícono de hamburguesa
+        isMenuOpen = false;
+      } else {
+        // Si el menú está cerrado, lo abrimos
+        mainNav.style.display = "flex"; // Mostrar el menú
+        burgerIcon.src = "/BurguerIcon/cerrar.png"; // Cambia al ícono de cerrar
+        isMenuOpen = true;
+      }
+        
+      console.log('click button')
         })
         
         navLinks.forEach(link => {
           if(
             link.addEventListener("click", () => {
               if(window.innerWidth < 767){
-                mainNav.style = "height:0px";
-                console.log('mobile')
+                mainNav.style = "display= none";
+                burgerIcon.src = "/BurguerIcon/menu.png"; // Cambia de nuevo al ícono de hamburguesa
+                isMenuOpen = false;
               }
              else if(window.innerWidth >= 767){
-              mainNav.style = "height:150px";
+              mainNav.style = "display= none";
+              burgerIcon.src = "/BurguerIcon/menu.png"; // Cambia de nuevo al ícono de hamburguesa
+              isMenuOpen = false;
              }
             })
           )
           ;
-          // showNav(console.log('PRUEBA'))
        });
     })
   ;
   return `
-  <div class="burguer">
-     <button class="navbar-burguer" id="js-navbar-burguer">
-       <img src="/BurguerIcon/barra-de-menus.png"</>
-     </button>
-    <h2>Gabi Garcia</h2>
+  <div class="navbarContainer">
+      <div class="burguer">
+        <button class="navbar-burguer" id="js-navbar-burguer">
+            <img src="/BurguerIcon/menu.png" alt="Abrir menu" />
+        </button>
+      </div>
+    <nav class="nav">
+      <div class="encabezado">
+        <h1>Gabi Garcia</h1>
+        <h2>Fullstack Developer</h2>
+      </div>
+            <ul class="main-nav" id="js-menu" style="display: none;">
+            <li>
+                <a href="#"  class="nav-links" id="about">
+                  <span class="line"></span>
+                  <p>Sobre mi</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"  class="nav-links" id="experiencia">
+                  <span class="line"></span>
+                  <p>Experiencia</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"  class="nav-links" id="projects">
+                  <span class="line"></span>
+                  <p>Proyectos</p>
+                </a>
+              </li>
+               <li>
+                <a href="#"  class="nav-links" id="skills_tools">
+                  <span class="line"></span>
+                  <p>Skills & Tools</p>
+                </a>
+              </li>
+                <li>
+                <a href="#"  class="nav-links" id="curriculum">
+                  <span class="line"></span>
+                  <p>C.V.</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"  class="nav-links" id="certificados">
+                  <span class="line"></span>
+                  <p>Certificaciones</p>
+                </a>
+              </li>
+              <ul class="contact">
+                <li>
+                  <a href="https://www.linkedin.com/in/gabriel-garcia-ab029b210/" class="nav-links" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Gabi-Garcia" class="nav-links" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                </li>
+                <li>
+                  <a href="mailto:gabriel.garcia.development@gmail.com" class="nav-links" target="_blank">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                </li>
+              </ul>
+            </ul>
+    </nav>
   </div>
-  
-  <nav class="nav">
-   <ul class="main-nav" id="js-menu">
-      <li>
-      <a href="#"  class="nav-links" id="homelink">Home</a>
-      </li>
-      <li>
-      <a href="#"  class="nav-links" id="projectslink">Projectos</a>
-      </li>
-      <li>
-      <a href="#"  class="nav-links" id="aboutlink">Sobre mi</a>
-      </li>
-      <li>
-      <a href="#"  class="nav-links" id="certificados">Certificaciones</a>
-      </li>
-      <li>
-      <a href="#"  class="nav-links" id="curriculum">C.V.</a>
-      </li>
-      <li>
-      <a href="#" id="themeBtn"  class="nav-links">☀</a>
-      </li>
-      </ul>
-      </nav>
       `;
     }

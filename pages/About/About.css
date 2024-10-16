@@ -5,11 +5,94 @@
     .about{
         width: 95%;
         margin: auto;
-        padding: 10px;
-        background-color: rgb(158, 154, 154);
+        margin-top:150px;
+        padding: 5px;
+        /* border: 1px solid red; */
     }
-    .about > p {
-        font-size:1.1rem;
+    .cajaTextos{
+        width: 100%;
+        margin: auto;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+    }
+    .about .cajaTextos .hola{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin-top: 10px;
+        /* border: 1px solid red; */
+    }
+    .hola .holaCabecera{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* border: 1px solid violet; */
+    }
+    .about .cajaTextos .hola .holaCabecera h2, .about .cajaTextos .hola .holaCabecera p{
+        width: 100%;
+        display: inline-block;
+        font-size:1rem;
+        font-style: normal;
+        /* border: 1px solid aqua; */
+    }
+    .hola p{
+        font-size: 0.8rem;
+        margin-top:40px;
+        /* border: 1px solid blue; */
+    }
+    .hola .convertido, .hola .programador{
+        display: flex;
+        margin-top: 0px;
+        width: fit-content;
+        font-weight: 900;
+    }
+    .cajaUno , .cajaDos{
+        width: 140px;
+        height: 140px;
+        background-position:contain;
+        /* border: 1px solid yellow; */
+    }
+    .cajaUno img, .cajaDos img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    .cajaTextos .TextoDev, .cajaTextos .TextoMusical,  .cajaTextos .perfilCompetencial{
+        margin-top: 20px;   
+        padding: 5px;
+        width: 100%;
+        /* border: 1px solid violet; */
+    }
+    .cajaTextos .perfilCompetencial{
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    .cajaTextos .perfilCompetencial h2{
+        font-size: 1.2rem;
+        /* border: 1px solid yellow; */
+    }
+    .cajaTextos .perfilCompetencial h3{
+        margin-top: 20px;
+        font-size: 1rem;
+        /* border: 1px solid red; */
+    }
+    .perfilCompetencial p{
+        width: 100%;
+        font-size: 0.9rem;
+        margin-top: 15px;
+        /* border: 1px solid green; */
+    }
+    .cajaTextos .TextoDev p, .cajaTextos .TextoMusical p {
+        font-size: 0.9rem;
+        margin-top: 30px;
+        border: 1px;
     }
 }
 
@@ -20,11 +103,82 @@
 .about{
     width: 95%;
     margin: auto;
+    margin-top: 200px;
     padding: 10px;
-    background-color: rgb(158, 154, 154);
 }
-.about > p {
-    font-size:1.6rem;
+.cajaTextos{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid yellow; */
+}
+.about .cajaTextos .hola{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+}
+.hola .holaCabecera{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid violet; */
+}
+.about .cajaTextos .hola .holaCabecera h2, .about .cajaTextos .hola .holaCabecera p{
+    width: 100%;
+    display: inline-block;
+    font-size: 3rem;
+    font-style: normal;
+    /* border: 1px solid aqua; */
+}
+.hola p{
+    font-size: 1.2rem;
+    margin-top:60px;
+}
+.hola .convertido, .hola .programador{
+    display: flex;
+    margin-top: 0px;
+    width: fit-content;
+    font-weight: 600;
+    /* border: 1px solid red; */
+}
+.cajaUno , .cajaDos{
+    width: 200px;
+    height: 200px;
+    background-position:contain;
+    /* border: 1px solid yellow; */
+}
+.cajaUno img, .cajaDos img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
 
+.cajaTextos .TextoDev, .cajaTextos .TextoMusical,  .cajaTextos .perfilCompetencial{
+ margin-top: 30px;   
+ padding: 20px;
+ width: 40%;
+ /* border: 1px solid violet; */
+}
+.cajaTextos .perfilCompetencial{
+    width: 100%;
+}
+.cajaTextos .perfilCompetencial h3{
+    margin-top: 20px;
+}
+.perfilCompetencial p{
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+.cajaTextos .TextoDev p, .cajaTextos .TextoMusical p {
+    font-size: 1.1rem;
+    margin-top: 30px;
 }
 }

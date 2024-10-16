@@ -2,14 +2,13 @@ import "./Projects.css";
 import { cleanPage } from "../../utils/cleanPage";
 import { projects } from "../../data/projects";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
-import { Divider } from "../../components/Divider/Divider";
 
 export const Projects = () => {
     const main = document.querySelector("main");
     cleanPage(main);
     main.innerHTML = `
     <section class="projects">
-    ${Divider()}
+    <p class="proyectos">Proyectos</p>
     <div class="projects-container"></div>
     </section>`;
     const container = document.querySelector(".projects-container");
@@ -17,5 +16,5 @@ export const Projects = () => {
     const figure = document.createElement("figure");
     figure.innerHTML = ProjectCard(project);
     container.appendChild(figure);
-    }
+    } 
     }

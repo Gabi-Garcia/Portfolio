@@ -1,0 +1,103 @@
+/******************************************************************/
+/*******************MEDIA QUERY 320px hasta 767px*****************/
+/******************************************************************/
+@media (min-width: 320px) and (max-width:767px){
+    .SkillsAndTools{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 150px;
+        padding: 20px;
+        /* border: 1px solid red; */
+    }
+    .headerSkillsAndTools{
+        width: fit-content;
+        display: flex;
+        flex-wrap: nowrap;
+        position: fixed;
+        top: 200px;
+        left: 50px;
+        padding: 10px;
+        background-color: #975151;
+        display: none;
+    }
+    .cajaSkill-items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.8rem;
+        margin-left:0px;
+        padding: 10px;
+        margin-top: 0px;
+        /* border: 1px solid yellow; */
+    }
+    .SkillsAndTools .skill-item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+    .SkillsAndTools .skill-item i{
+        font-size:3rem;
+    }
+    .SkillsAndTools .skill-item p{
+        font-size: 0.6rem;
+        font-weight: 600;
+        margin-top:10px;
+        cursor: pointer;
+    }
+}
+
+/**********************************************************************************/
+/**************************MEDIA QUERY 768px hasta 1500px**************************/
+/**********************************************************************************/
+@media (min-width: 768px) and (max-width:1500px) {
+
+.SkillsAndTools{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 200px;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+.headerSkillsAndTools{
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 200px;
+    left: 50px;
+    padding: 10px;
+    background-color: #975151;
+}
+.cajaSkill-items{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-left:200px;
+    padding: 20px;
+    margin-top: 30px;
+    /* border: 1px solid yellow; */
+}
+.SkillsAndTools .skill-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.SkillsAndTools .skill-item i{
+    font-size:5rem;
+}
+.SkillsAndTools .skill-item p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top:10px;
+    cursor: pointer;
+}
+}
