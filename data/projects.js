@@ -9,7 +9,7 @@ export const projects = [
     },
     {
         anio:"2024",
-        title: "Laboratorio de Monstruos",
+        title: "Lab. de Monstruos",
         description: "Página web destinada a la creación de monstruos. Recurso para que juegue toda la familia. ",
         tech: ["HTML5", "CSS", "ReactJS", "Node", "Mongo"],
         github: "https://github.com/Gabi-Garcia/Laboratorio-de-Monstruos-Frontend",
@@ -104,7 +104,7 @@ export const projects = [
     },
     {
         anio:"2023",
-        title: "Gabi-Garcia Portfolio Personal",
+        title: "Portfolio Personal",
         description: "Portfolio con proyectos personales.",
         tech: ["HTML5", "CSS", "JavaScript"],
         github: "https://github.com/Gabi-Garcia/Portfolio",
@@ -127,7 +127,7 @@ export const projects = [
     },
     {
         anio:"2022",
-        title: "Buscador de Noticias.",
+        title: "Buscador de Noticias",
         description: "Aplicación frontend, colaboración grupal.",
         tech: ["HTML5", "CSS", "TypeScript", "Angular"],
         github: "https://github.com/Gabi-Garcia/ANGULAR-BuscadordeNoticias",

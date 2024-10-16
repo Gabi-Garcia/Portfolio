@@ -1,7 +1,72 @@
 /******************************************************************/
 /*******************MEDIA QUERY 320px hasta 767px*****************/
 /******************************************************************/
-@media (min-width: 320px) and (max-width:767px){}
+@media (min-width: 320px) and (max-width:767px){
+    .Cajaexperiencia{
+        width:100%;
+        margin-top:150px;
+        padding: 20px;
+        /* border:1px solid red */
+    }
+    .experiencia{
+        width: fit-content;
+        display: flex;
+        flex-wrap: nowrap;
+        position: fixed;
+        top: 150px;
+        left: 20px;
+        padding:5px;
+        background-color: #975151;
+        display: none;
+    }
+    .Cajaexperiencia .cajaUl{
+        width: 100%;
+        margin-left:0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px;
+        margin-top: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        &&:hover{
+            background-color: #302b63;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+    }
+    
+    .Cajaexperiencia .cajaUl p{
+        padding:5px;
+        margin-top: 10px;
+        /* border: 1px solid black; */
+    }
+    .Cajaexperiencia .cajaUl .ulTech{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: row;
+        gap: 5px;
+        /* border: 1px solid green; */
+    }
+    .Cajaexperiencia .cajaUl .ulTech li{
+    width: fit-content;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+    font-weight:bolder;
+    text-align: center;
+    &&:hover{
+        background-color:  #24243e;
+        background-color:#975151;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+    }
+}
 
 /**********************************************************************************/
 /**************************MEDIA QUERY 768px hasta 1500px**************************/
@@ -19,18 +84,18 @@
     flex-wrap: nowrap;
     position: fixed;
     top: 200px;
-    left: 50px;
+    left: 30px;
     padding: 10px;
     background-color: #975151;
 }
 .Cajaexperiencia .cajaUl{
     width: 70%;
-    margin-left:200px;
+    margin-left:150px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     border: 1px solid gray;
     border-radius: 5px;
     &&:hover{

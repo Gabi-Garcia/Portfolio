@@ -3,10 +3,12 @@
 /******************************************************************/
 @media (min-width: 320px) and (max-width:767px){
     .certificados{
-        width: 100%;
+        width:100%;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction:row;
+        margin: auto;
+        margin-top: 150px;
         /* border: 1px solid white; */
     }
     .certificados >.certificados-container{
@@ -15,17 +17,17 @@
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        gap: 10px;
+        flex-direction:column;
+        gap: 0px;
         /* border: 1px solid green; */
     }
     .certificados > .certificados-container > figure{
         width: 90%;
-        height: 90%;
         display: flex;
         flex-wrap: wrap;
         gap: 0px;
         margin: auto;
+        /* border: 1px solid red; */
     }
 }
 
