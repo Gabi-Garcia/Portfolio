@@ -7,10 +7,11 @@ export const CurriculumVitae = ()=>{
     main.innerHTML = `
     <section class="cv">
             <button>
-                <a href="/CV/Dev_Gabriel.pdf" target="_blank" download="cv">Descargar</a>
+                <a href="/CV/CV_Dev.pdf" target="_blank" download="cv">Descargar</a>
             </button>
             <div class="imgCV">
-                <img src="/CV/CVImg.jpeg">
+                <img src="/CV/1.png">
+                 <img src="/CV/2.png">
             </div>
     </section> 
     `
